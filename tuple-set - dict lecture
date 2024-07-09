@@ -1,0 +1,871 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "3de186d4-3f20-4c1a-be6b-b34c8f614558",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#tuples> it is a ordered collection of elements, it is heterogenous and is immutable(cant change).\n",
+    "\n",
+    "x = ()\n",
+    "type(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "6a2784e0-c7fb-4211-a429-2e4954c32242",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x= (\"pwskills\", \"ajay\", 3, 7,)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "4211390c-fbe6-4987-9eb7-1ba2524bfe13",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "9e1f31cb-a11f-4b87-b65b-e59359f23776",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'ajay'"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x[1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "ff0350fc-5f0e-4c0b-ae7a-f3e0bae6c170",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "7"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x[-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "3ea0d5bf-cb0b-4db1-a027-3c3e7dff31d4",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'tuple' object does not support item assignment",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[7], line 6\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;66;03m#TUPLES CANNOT CHANGE\u001b[39;00m\n\u001b[1;32m      2\u001b[0m \n\u001b[1;32m      3\u001b[0m \u001b[38;5;66;03m#USE CASE> USE TUPLE AS A DATA STRUCTURE WHERE YOU DONT WANT TO MODIFY THE DATA.\u001b[39;00m\n\u001b[1;32m      5\u001b[0m employee_id \u001b[38;5;241m=\u001b[39m (\u001b[38;5;241m234\u001b[39m, \u001b[38;5;241m567\u001b[39m, \u001b[38;5;241m789\u001b[39m)\n\u001b[0;32m----> 6\u001b[0m \u001b[43memployee_id\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m0\u001b[39;49m\u001b[43m]\u001b[49m\u001b[38;5;241m=\u001b[39m \u001b[38;5;241m900\u001b[39m\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'tuple' object does not support item assignment"
+     ]
+    }
+   ],
+   "source": [
+    "#TUPLES CANNOT CHANGE\n",
+    "\n",
+    "#USE CASE> USE TUPLE AS A DATA STRUCTURE WHERE YOU DONT WANT TO MODIFY THE DATA.\n",
+    "\n",
+    "employee_id = (234, 567, 789)\n",
+    "employee_id[0]= 900"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "79763219-266e-44b3-98d4-5e7b749f08a3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#if i want to count\n",
+    "\n",
+    "employee_id = (234, 567, 789, 234, 234, 234)\n",
+    "employee_id.count(234)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "5bc2a07b-f2d4-4634-9ad7-2858a03ed9ff",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#if i want to check index\n",
+    "\n",
+    "employee_id = (234, 567, 789, 234, 234, 234)\n",
+    "employee_id.index(789)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "df132467-577c-4495-b3a4-6738739c2ebe",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(234, 567, 789, 234, 234, 234, 234, 567, 789, 234, 234, 234)\n"
+     ]
+    }
+   ],
+   "source": [
+    "#if we want to double the amount\n",
+    "\n",
+    "print(employee_id*2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "d8d68b84-718f-4663-b585-14044c7cbed6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(234, 567, 789, 234, 234, 234)"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#slicing of tuples\n",
+    "\n",
+    "employee_id"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "3a3a793a-d3fb-4655-ac7d-880004af2087",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(234, 567, 789)"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "employee_id = (234, 567, 789, 234, 234, 234)\n",
+    "employee_id[:3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "41142159-faf7-421c-901a-649ed6d8d60f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "789"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "max(employee_id)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "6ff2d0d1-914f-42a9-8128-b8f617812110",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "234"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "min(employee_id)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "d76dcd11-6e2c-4ea3-be5e-863afd937931",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "i\n",
+      "i\n",
+      "i\n",
+      "i\n",
+      "i\n",
+      "i\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in employee_id:\n",
+    "    print(\"i\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "0e3da74c-f653-40c7-af0b-43aafb9a0934",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "t2= (100, 200, 300, 400)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "3640750f-b4ba-40b6-90ca-eab91a6f547c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "t1= (345, 456, 567)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "24dd9992-f106-4bbf-a4c8-fd5e77056e49",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#nested\n",
+    "\n",
+    "t3= (t2,t1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "eed343c6-9148-481e-bc28-63a2b26e84b0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "((100, 200, 300, 400), (345, 456, 567))"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "c533cd39-49cb-42cb-8bcd-3eeb0019c15d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# delete\n",
+    "\n",
+    "del t3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "0f2ddf9a-8ba2-483f-b420-91175124ee2b",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 't3' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[29], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43mt3\u001b[49m\n",
+      "\u001b[0;31mNameError\u001b[0m: name 't3' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "t3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "a2336824-7e0d-48ff-b4dd-59183b1d4aef",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t2= (100, 200, 300, 400)\n",
+    "len(t2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "10b156e7-a882-430a-86a4-c4962f7ab2d7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#membership"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "8caf07f4-3d4d-400c-b52c-2c9eaedd31d6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "100 in t2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "1fca5efd-b5fc-4c21-816f-3bf71435c0ba",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "400 not in t2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "6d2925a8-f26a-40cf-ba54-8c4864303d21",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(345, 456, 567, 100, 200, 300, 400)"
+      ]
+     },
+     "execution_count": 34,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t1 + t2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "638c4aa8-973f-4986-ba0b-ec3fad13f683",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#sets> these are unordered and unique collection of elements\n",
+    "#doesnt allow duplicate elements\n",
+    "#it is unordered > why? because it gives you unique element\n",
+    "#indexing will not work\n",
+    "#use curly brackets"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "46f32d02-fcab-494f-bac8-e3b912fe605e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s = {} #because it does not have unique value that is why it dict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "a649cee2-1e15-4955-83c0-ed4b1107110c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(s)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "33f712c4-e5eb-440e-bc26-b88bc3694c09",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s = {1}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "b8f73128-d589-40fa-89fd-0e9f15efa52e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "set"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(s)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "8af51b42-8978-4dee-9fd0-eb22a149762a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#use case\n",
+    "\n",
+    "grocery_list= [\"apple\", \"banana\", \"litchi\", \"apple\", \"banana\", \"chilly\", \"potato\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "c2fae1f0-0c67-4bef-bed6-2bc0f0f3b778",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "grocery_list= set(grocery_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "6cd750e3-52de-41a3-a447-85da57b60fc9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'apple', 'banana', 'chilly', 'litchi', 'potato'}"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "grocery_list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "6341c054-dd42-43ad-8857-59c18939a8b8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['chilly', 'apple', 'potato', 'litchi', 'banana']"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list(grocery_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "58c80738-8347-483d-99eb-419ff8b14023",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#SET OPERATIONS\n",
+    "#VERY VERY IMPORTANT"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "bd0577a9-cb14-42d3-ad00-1de5e99ada74",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#examples- \n",
+    "s1 = {'coding', 'playing', ' dancing'}\n",
+    "s2 = {'coding', 'travelling', 'trekking'}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "507294b8-1805-43d2-994b-4a42eb621e53",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{' dancing', 'coding', 'playing', 'travelling', 'trekking'}"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#UNION- combine all the elements\n",
+    "\n",
+    "s1 | s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "603de289-1b1d-49c0-8b67-6581359a3cc8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'coding'}"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# INTERSECTION- common elements\n",
+    "\n",
+    "s1&s2\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "e4b90007-3e4a-4dd5-950b-44b310b79e64",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{' dancing', 'playing'}"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#DIFFERENCE\n",
+    "\n",
+    "s1-s2\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "b46c3f49-4250-4e46-830b-dac4abcb3323",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{' dancing', 'playing', 'travelling', 'trekking'}"
+      ]
+     },
+     "execution_count": 52,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#symmetric difference\n",
+    "\n",
+    "s1 ^ s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "6d80b7b1-0d92-4999-854e-b7314fc5cc69",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#FROZEN SETS\n",
+    "\n",
+    "#IF WE WANT TO ADD ANYTHING IN SET\n",
+    "\n",
+    "s= {1, 2, 5, 7}\n",
+    "s.add(3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "id": "2cdbf504-146c-4088-be3f-daf02877aaeb",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 2, 3, 5, 7}"
+      ]
+     },
+     "execution_count": 54,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "2f373084-9c75-4231-9662-a04d3f9f08bf",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s= {1, 2, 5, 7}\n",
+    "tulika = frozenset([2,3,3,34,5,7]) #no cannot change or remove or add any element now"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "id": "b8ddfc38-2e87-4870-9281-2ee8acbaa748",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "frozenset"
+      ]
+     },
+     "execution_count": 59,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(tulika)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "5a6f3508-cdd2-408b-9528-a08cade63ec5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "frozenset({2, 3, 5, 7, 34})"
+      ]
+     },
+     "execution_count": 60,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "tulika"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a838b570-95ca-4058-ab25-8b69dff20464",
+   "metadata": {},
+   "source": [
+    "DICTIONARY"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2436eb0d-8b7f-474a-a8a4-5eefbaed3081",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

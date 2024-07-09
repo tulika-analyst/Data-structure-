@@ -1,0 +1,1073 @@
+{
+ "cells": [
+  {
+   "cell_type": "raw",
+   "id": "cf5638e6-2795-4f6b-961c-c40d1da29521",
+   "metadata": {},
+   "source": [
+    "Data structure\n",
+    "list > is a mom bad which you can store anything is this list >> can store heterogenous data(means int, float, stn)\n",
+    "List is a ordered collection of elements that can be of data type.\n",
+    "List are mutable(can be changed)\n",
+    "[1, 2, aloo, coke, 'ajay')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "70a59332-b97f-4f1c-b125-106d89898d72",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "list"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "num = [1, 2, 'aloo', 4, 5, ]\n",
+    "type(num)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "37ed201b-dcfe-4820-afd6-1afb3f81b043",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "num[0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "27a2e5c9-d488-4ef2-9914-feeb1611e3be",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'aloo'"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "num[2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "ced52c94-19c8-47ca-8981-006bc2566126",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "num[-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "cb1d1219-567a-4875-a56a-e32ba4c14595",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "IndexError",
+     "evalue": "list index out of range",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mIndexError\u001b[0m                                Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[8], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43mnum\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m5\u001b[39;49m\u001b[43m]\u001b[49m\n",
+      "\u001b[0;31mIndexError\u001b[0m: list index out of range"
+     ]
+    }
+   ],
+   "source": [
+    "num[5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "944b43c7-c4d2-4d23-a947-cbd84f53c157",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#list can store any data type\n",
+    "\n",
+    "#adding element to the list (.append) to add and (.remove) to remove."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "e6858486-c5d2-42e3-b888-088d23e10b2f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "num = [1, 2, 'aloo', 4, 5, ]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "041229fd-1bdb-4e1d-9f78-4674bb333578",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 'aloo', 4, 5]"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "num"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "08f4f1d9-4fc6-43eb-9834-bb49de4905c8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "num.append('reena')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "b46cfa00-81dc-4ae3-a944-8477b88452a0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 'aloo', 4, 5, 'reena']"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "num"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "48e34dff-8953-43d0-9a56-860270e8f390",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "num.remove('aloo')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "67c60e37-7cfd-417b-aa34-0dc0b7d56a1e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 4, 5, 'reena']"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "num"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "87338da9-115a-493c-b82e-8a20999b00ea",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#if i want to add list inside list\n",
+    "\n",
+    "list = [[1,2,3,], [4,5,6],[7,8,9]]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "494b1ab9-49ec-4e35-b613-53df2b142168",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "list"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "11f77ae0-0473-4988-9bf3-cdd70d3ed514",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list[0][1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "2057af1b-1a72-4149-9577-6464fafae4d4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "9"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list[2][2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "791636c8-6949-4694-9673-1812c80caf28",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#list is mutable\n",
+    "\n",
+    "shopping = ['Fruit', 'veg', 1, 4.5, 5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "43bf3bcd-856f-4f86-b067-dda737ae551f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "shopping[3] = 'bottle'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "f1245e09-04d9-410d-8f75-e75e6a7c248a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Fruit', 'veg', 1, 'bottle', 5]"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "shopping"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "80f9c842-7601-40ed-9943-97feac1973b7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Fruit veg 1 bottle 5 "
+     ]
+    }
+   ],
+   "source": [
+    "for item in shopping:\n",
+    "    print(item,end = ' ')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4d6bb5fb-b42c-4663-81f7-d3f46dc06f4e",
+   "metadata": {},
+   "source": [
+    "Tupples"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "cc93083e-397f-4101-999a-7e878421d7bf",
+   "metadata": {},
+   "source": [
+    "Tuple = immutable\n",
+    "()- paranthesis"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "f1f78def-76fc-44b5-9a03-6cda8a7d9379",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "point = (4,5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "62ae641b-77d1-461d-a64b-7351d11b8beb",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(4, 5)"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "point"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "39eb898a-0278-4524-ad94-0edcd1230d8a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 34,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(point)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "2ee28723-79e3-426b-a7c7-8a3b6419d023",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#it is also a heterogeous data\n",
+    "\n",
+    "emp_name= ( 'ajay', 'vijay', 'oggy', 'tuchii')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "f0d4daa1-74e4-4c01-afc1-fb54cab6cbbb",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 36,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(emp_name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "5a749c3a-e4f4-40f4-b08a-054a93504955",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'ajay'"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "emp_name[0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "e9f9e515-50ab-47d2-86c4-4a28152eb6a5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'vijay'"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "emp_name[1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "baa5816b-b738-4a24-90da-e70a18ce0775",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'tuple' object does not support item assignment",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[39], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43memp_name\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m2\u001b[39;49m\u001b[43m]\u001b[49m\u001b[38;5;241m=\u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mreena\u001b[39m\u001b[38;5;124m'\u001b[39m\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'tuple' object does not support item assignment"
+     ]
+    }
+   ],
+   "source": [
+    "emp_name[2]='reena'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "d6b669ef-2b99-455f-960d-3d3c15526c30",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "box1= (1,2)\n",
+    "box2= (3,4)\n",
+    "choc_bag= (box1,box2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "0057bdd1-e2a3-484b-870b-96f3a045eaa7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(choc_bag)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "2117247e-9a77-46da-920f-f87f6a35699f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "((1, 2), (3, 4))"
+      ]
+     },
+     "execution_count": 42,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "choc_bag"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6d97fb8d-7f04-4bb9-acab-d3150faf9c3a",
+   "metadata": {},
+   "source": [
+    "Set"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "72c96f85-df60-4b7f-948d-1cf75942d5c3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#set are unordered collection of unique elements\n",
+    "a = {'red', 'orange', 'purple', 'orange', 'red', 'purple'}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "25f45081-3481-44d6-9a3e-470dd98a1391",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "set"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "34750da3-7940-48cd-8afc-118503fb938e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'orange', 'purple', 'red'}"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "b378389f-cbb5-4117-82c5-8501d88e625e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#it will not execute the duplicate because it is unique element."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "d523ac87-197a-48a7-af60-5bf2af08a6f5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#we cannot do indexing method in set because it is unordered collection not ordered like list\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "3c5629b5-3cab-4f35-b528-cf5bf51fae80",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'set' object is not subscriptable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[48], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43ma\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m1\u001b[39;49m\u001b[43m]\u001b[49m\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'set' object is not subscriptable"
+     ]
+    }
+   ],
+   "source": [
+    "a[1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "9269c5e7-f000-4a7a-84e8-88d414eaf860",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#sets are mutable= it can be changed.\n",
+    "\n",
+    "a.add('reena')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "b1e61424-349d-40c6-9df9-47878307df51",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'orange', 'purple', 'red', 'reena'}"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "f5f10419-bd01-4417-b854-902f1ff6ac7c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a.remove('purple')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "92d7533b-d6e3-41b4-b958-a6fd1db69352",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'orange', 'red', 'reena'}"
+      ]
+     },
+     "execution_count": 52,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f3a40649-313c-480e-9b55-5dcfe1201853",
+   "metadata": {},
+   "source": [
+    "Dictionaries"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "id": "cb8ad75a-3685-416c-86a5-ec2d7fa318ba",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# it stores the data in key value pair\n",
+    "\n",
+    "my_dict={'data sciene': 'Easy level', 'class duration':200}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "9141e64a-52ed-4c98-940f-249dd04307f5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'data sciene': 'Easy level', 'class duration': 200}"
+      ]
+     },
+     "execution_count": 56,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "id": "2e212f89-6176-4754-a5ca-89bf548c6c8d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict"
+      ]
+     },
+     "execution_count": 57,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(my_dict)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "b3b80225-0bbf-4b61-866d-5de58ded559f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_phonebook = {'Dad': 1234, 'mom' : 4567,'sister': 7890}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "231d2b02-7922-4bc4-bf28-0cdb0d5ad4f0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'Dad': 1234, 'mom': 4567, 'sister': 7890}"
+      ]
+     },
+     "execution_count": 62,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_phonebook"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "2c7a463a-9717-4957-a33d-348fd3f08c28",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict"
+      ]
+     },
+     "execution_count": 63,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(my_phonebook)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "49c9b7ac-f11d-4acc-8bf7-d896b8d70e11",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4567"
+      ]
+     },
+     "execution_count": 65,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_phonebook['mom']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "9da76ef0-b1bc-4520-8409-00d5301c1c1d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#instead of using indexing method, replaced by key of the disctionary."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "d8538587-bb15-4eee-98b7-d5c6d0e2de48",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_phonebook = {'Dad': 1234, 'mom' : 4567,'sister': 7890, 'dad':670}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "id": "fdeff268-10d2-442c-a1b4-f91f14a1925f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "670"
+      ]
+     },
+     "execution_count": 70,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_phonebook['dad'] "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "0b0ea4a4-fe3c-478e-9b90-f2f5cf8be886",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_phonebook['dad'] = 34567"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "id": "143f2628-87e7-48ef-940c-01aaf23b361d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'Dad': 1234, 'mom': 4567, 'sister': 7890, 'dad': 34567}"
+      ]
+     },
+     "execution_count": 72,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_phonebook"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "id": "9bff2c10-1ec2-44c1-ad55-31692a01e794",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict_keys(['Dad', 'mom', 'sister', 'dad'])"
+      ]
+     },
+     "execution_count": 73,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_phonebook.keys()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "id": "b9ed3d24-9686-4f53-9804-55bad6f9a093",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict_values([1234, 4567, 7890, 34567])"
+      ]
+     },
+     "execution_count": 75,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_phonebook.values()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "241be485-d530-4a13-92bf-e3a37c14727f",
+   "metadata": {},
+   "source": [
+    "Array"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "id": "7e8e82a4-c02e-4e9f-8a79-e02eb75b8628",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#array is similar like list> only difference is list was heterogenous but array is homogenous \n",
+    "#data(only int, only stg, only float)\n",
+    "\n",
+    "\n",
+    "array=('i', [1,2,3,4])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "id": "56182470-9bc7-40f4-9f39-8bc2c7da838c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 77,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(array)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "68b27849-8634-4f6e-a964-41f2d7260f78",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
